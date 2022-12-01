@@ -1,0 +1,60 @@
+#momNote {
+  background-color: #e5e5e2;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Allura';
+  font-size: 30px;
+  text-align: left;
+  box-shadow: 2px 2px 10px;
+}
+
+.kuva {
+  border: 2px solid #000;
+}
+#solutions {
+  color: #000;
+}
+#flappyufo {
+  border: 1px solid #000;
+  font-family: 'VT323';
+  font-weight: bold;
+}
+
+#lockbutton{
+  height: 25px;
+  width: 60px;
+  text-align: center;
+  font-size: 23px;
+  border-radius: 1px;
+}
+
+#youGotOUT {
+  display: inline-block;
+  font-size: 70px;
+  margin-bottom: 50px;
+  background: -webkit-linear-gradient(#f10ce5, #0cf1de);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/*Potentiaalinen toinen voittoruutu
+#voittotesti {
+  position: fixed;
+  z-index: 1;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#voittotsis {
+  position: absolute;
+
+  text-align: center;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+*/

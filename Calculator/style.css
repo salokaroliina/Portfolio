@@ -1,0 +1,46 @@
+.calc{
+  margin: auto;
+  margin-top: 100px;
+  width: 500px;
+}
+
+#screen{
+  background-color: #000;
+  margin-bottom: 5px;
+  height: 80px;
+  width: 448px;
+}
+
+p{
+  color: white;
+  font-family: 'Changa', sans-serif;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+button{
+  color: white;
+  font-size: 30px;
+  height: 110px;
+  width: 110px;
+  margin: -1px;
+  font-family: 'Changa', sans-serif;
+  font-weight: bold;
+  border-radius: 0px;
+  border-style: none;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(185,123,236,1) 100%);
+}
+
+#plus{
+  height: 222px;
+}
+
+#equal{
+  width: 222px;
+}
+
+.nan{
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(81,225,255,1) 100%);
+}

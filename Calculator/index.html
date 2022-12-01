@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&family=Orbitron&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calc">
+
+      <p id="screen"></p>
+
+      <table>
+        <tr>
+          <td><button onclick="calculator(this);">7</button></td>
+          <td><button onclick="calculator(this);">8</button></td>
+          <td><button onclick="calculator(this);">9</button></td>
+          <td><button onclick="calculator(this);">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="calculator(this);">4</button></td>
+          <td><button onclick="calculator(this);">5</button></td>
+          <td><button onclick="calculator(this);">6</button></td>
+          <td><button onclick="calculator(this);">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="calculator(this);">1</button></td>
+          <td><button onclick="calculator(this);">2</button></td>
+          <td><button onclick="calculator(this);">3</button></td>
+          <td rowspan="2"><button id="plus" onclick="calculator(this);">+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="calculator(this);">0</button></td>
+          <td><button onclick="calculator(this);">.</button></td>
+          <td><button onclick="calculator(this);">/</button></td>
+
+        </tr>
+        <tr>
+          <td colspan="2"><button id="equal" onclick="calculator(this);">=</button></td>
+          <td><button class="nan" onclick="calculator(this);">C</button></td>
+          <td><button class="nan" onclick="calculator(this);">AC</button></td>
+        </tr>
+      </table>
+      </div>
+  </body>
+</html>

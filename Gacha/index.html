@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <script src="script.js" charset="utf-8"></script>
+      <script src="sounds.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Gacha</title>
+  </head>
+  <body>
+
+    <audio src="Sounds/cosy-prigida-main-version-02-58-17021.mp3" id="sound" loop="loop"></audio>
+    <audio src="Sounds/button-push-chunky-plastic-button-gamemaster-audio-1-00-00.mp3" id="effectOne"></audio>
+    <audio src=Sounds/button-push-clicky-plastic-button-gamemaster-audio-1-00-00.mp3 id="effectTwo"></audio>
+
+      <div class="buttons">
+        <button type="button" alt="sounds on" id="soundOn" onclick="playAudio()">Sound ON</button>
+
+        <button type="button" alt="sounds off" id="soundOff" onclick="muteAudio()">Sound OFF</button>
+
+        <button type="button" alt="credits" id="showCredits" onclick="creditModal()">Credits</button>
+      </div> <!--buttons -->
+
+      <div class="wrapper">
+        <div class="gachaMachine">
+          <!--THE MACHINE AND PARTS -->
+          <img src="Images/machine.png" alt="gacha machine, good vibes, collect them all" id="machine" ondragstart="return false;">
+          <!--Hatch without a ball (gets replaced wit an img with a ball)-->
+          <img src="Images/noball.png" alt="ball" id="hatch" ondragstart="return false;" onclick="openModal()">
+          <!--Image of an empty hatch -->
+          <img src="Images/noball.png" alt="hatch" ondragstart="return false;" id="noball">
+          <!--Handle -->
+          <img src="Images/handle_01.png" alt="handle" ondragstart="return false;" id="handleReplace" oncklick="gachasound()">
+          <img src="Images/handle_01.png" alt="handle" ondragstart="return false;" id="handle" onclick="gacha()">
+        </div><!--gachaMachine -->
+
+
+        <!--DIV FOR THE MODAL -->
+        <div id="myModal" class="modal">
+          <div class="modalNote" id="note">
+            <div class="modalContent">
+              <p id="modalText"></p>
+              </div><!--modalContent-->
+
+              <button id="noteClose" onclick="closeModal()">Close</button>
+          </div><!--modalNote-->
+        </div><!--myModal-->
+
+        <!--credits-modal -->
+        <div id="credModal" class="modal">
+          <div class="modalNote" id="credits">
+            <div class="modalContent">
+              <p id="creditText">Credits: <br>
+                Graphics: Karoliina S. <br>
+                Code: Karoliina S. <br><br>
+                Music and sound effects <br>
+                Music from Uppbeat (free for Creators!): <br><br>
+                Background music: <br>
+                Prigida - Cozy <br>
+                <a href="https://uppbeat.io/browse/artist/prigida" target="_blank">https://uppbeat.io/browse/artist/prigida</a> <br> <br>
+                Sound effects: <br>
+                Button push - chunky plastic button - Gamemaster Audio <br>
+                Button push - clicky plastic button - Gamemaster Audio
+                </p>
+              </div><!--modalContent -->
+
+                <button id="credClose" onclick="closeCredits()">Close</button>
+
+          </div><!--modalNote -->
+        </div> <!--credModal -->
+      </div><!--wrapper -->
+
+  </body>
+</html>
